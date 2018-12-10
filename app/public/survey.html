@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type=text/css href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body class="survey-body">
+
+    <div class="container">
+
+        <h1 id="survey-h1">Get<span id="start">Started</span></h1>
+
+        <hr>
+
+        <form>
+
+            <div class="row">
+                <div class="col">
+                    <label class="col-form-label" for="name"><strong>Your <span id="survey">Name</span></strong> (required)</label>
+                    <input type="text" name="" id="name" class="form-control" required>
+                </div>
+                <div class="col">
+                    <label class="col-form-label" for="photo"><strong>Your <span id="survey">Picture</span></strong> (required)</label>
+                    <input type="text" name="" id="photo" class="form-control" required>
+                </div>
+            </div>
+
+            <h2 id="questions-h2">Survey<span id="survey">Questions</span></h2>
+
+            <div class="form-group">
+                <label for="FormControlSelect" class="question">I am a naturally extroverted person</label>
+                <select class="form-control" id="q1">
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2 - Somewhat Disagree</option>
+                    <option value="3">3 - Unsure</option>
+                    <option value="4">4 - Somewhat Agree</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="FormControlSelect" class="question">I consider myself to be dependable</label>
+                <select class="form-control" id="q2">
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2 - Somewhat Disagree</option>
+                    <option value="3">3 - Unsure</option>
+                    <option value="4">4 - Somewhat Agree</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="FormControlSelect" class="question">I'm open to new experiences</label>
+                <select class="form-control" id="q3">
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2 - Somewhat Disagree</option>
+                    <option value="3">3 - Unsure</option>
+                    <option value="4">4 - Somewhat Agree</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="FormControlSelect" class="question">I'm quick to find fault in people or things</label>
+                <select class="form-control" id="q4">
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2 - Somewhat Disagree</option>
+                    <option value="3">3 - Unsure</option>
+                    <option value="4">4 - Somewhat Agree</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="FormControlSelect" class="question">I consider myself to be a sympathetic, warm person</label>
+                <select class="form-control" id="q5">
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2 - Somewhat Disagree</option>
+                    <option value="3">3 - Unsure</option>
+                    <option value="4">4 - Somewhat Agree</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="FormControlSelect" class="question">I see myself as being disorganized</label>
+                <select class="form-control" id="q6">
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2 - Somewhat Disagree</option>
+                    <option value="3">3 - Unsure</option>
+                    <option value="4">4 - Somewhat Agree</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="FormControlSelect" class="question">I consder myself to a creative person</label>
+                <select class="form-control" id="q7">
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2 - Somewhat Disagree</option>
+                    <option value="3">3 - Unsure</option>
+                    <option value="4">4 - Somewhat Agree</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="FormControlSelect" class="question">I get angry easily</label>
+                <select class="form-control" id="q8">
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2 - Somewhat Disagree</option>
+                    <option value="3">3 - Unsure</option>
+                    <option value="4">4 - Somewhat Agree</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="FormControlSelect" class="question">I always try to follow the rules</label>
+                <select class="form-control" id="q9">
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2 - Somewhat Disagree</option>
+                    <option value="3">3 - Unsure</option>
+                    <option value="4">4 - Somewhat Agree</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="FormControlSelect" class="question">I think web development is awesome</label>
+                <select class="form-control" id="q10">
+                    <option value="1">1 - Strongly Disagree</option>
+                    <option value="2">2 - Somewhat Disagree</option>
+                    <option value="3">3 - Unsure</option>
+                    <option value="4">4 - Somewhat Agree</option>
+                    <option value="5">5 - Strongly Agree</option>
+                </select>
+            </div>
+
+            <div class="form-row mt-2">
+                <div class="form-group mr-auto">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Insert Modal -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- jQuery logic -->
+    
+</body>
+</html>
