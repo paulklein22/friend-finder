@@ -1,6 +1,7 @@
 // Dependencies
 const express = require("express");
 const path = require("path");
+const parser = require("body-parser");
 
 // Sets up the Express app and port
 var app = express();

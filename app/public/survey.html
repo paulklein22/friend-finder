@@ -142,11 +142,49 @@
         </form>
     </div>
 
-    <!-- Insert Modal -->
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title"><strong>Your Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- jQuery logic -->
+    <script>
+
+    $('#submit').on('click', function(){
+		
+			var newFriend = {
+				'name': $('#name').val().trim(),
+				'photo': $('#photo').val().trim(),
+				'scores': [$('#q1').val(),$('#q2').val(),$('#q3').val(),$('#q4').val(),$('#q5').val(),$('#q6').val(),$('#q7').val(),$('#q8').val(),$('#q9').val(),$('#q10').val()]
+			};
+			
+			//grab current URL for post method
+			var currentURL = window.location.origin;
+			//ajax send info to api route and await response
+		    $.post(currentURL + "/api/friends", newFriend, function(data){ 	
+		    })
+            .done(function(data){                    
+                $('.modal-body').html('<h1> New friend found!</h1>'+
+                    '<h2> '+ data.name + '</h2>'+
+                    '<img src="'+ data.photo +'" width=300px>');
+            $('#myModal').modal('toggle');
+            });
+        });
     
+    </script>
+
 </body>
 </html>
