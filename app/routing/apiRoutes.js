@@ -1,5 +1,5 @@
-// var path = require("path");
-var friendArray = require("../data/friends");
+var path = require("path");
+var friendArray = require("./data/friends.js");
 
 module.exports = function(app) {
   app.get("/api/friends", function(req, res) {
